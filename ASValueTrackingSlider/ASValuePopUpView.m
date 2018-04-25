@@ -90,7 +90,7 @@ NSString *const SliderFillColorAnim = @"fillColor";
         _textLayer.alignmentMode = kCAAlignmentCenter;
         _textLayer.anchorPoint = CGPointMake(0, 0);
         _textLayer.contentsScale = [UIScreen mainScreen].scale;
-        _textLayer.actions = @{@"contents" : [NSNull null]};
+        _textLayer.actions = @{@"contents" : [NSNull null],@"bounds" : [NSNull null],@"position" : [NSNull null],};
         
         _colorAnimLayer = [CAShapeLayer layer];
         
