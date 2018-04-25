@@ -116,6 +116,11 @@ NSString *const SliderFillColorAnim = @"fillColor";
 
 - (void)setColor:(UIColor *)color
 {
+    //shadow
+    _pathLayer.shadowOpacity = 0.5;
+    _pathLayer.shadowOffset = CGSizeZero;
+    _pathLayer.shadowRadius = 1;
+   
     _pathLayer.fillColor = color.CGColor;
     [_colorAnimLayer removeAnimationForKey:SliderFillColorAnim]; // single color, no animation required
 }
